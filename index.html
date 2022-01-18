@@ -1,16 +1,52 @@
+<!DOCTYPE html>
 <html>
-    <head>
+<head>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
+</head>
+
+<body>
+    <div class="container">
         <h1>Simple Interest Calculator</h1>
-
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
-
-        <button onclick="compute()">Compute</button>
-    </body>
+        <div class='form' >
+            <form name='form' action="" onsubmit="compute(event)" >
+                <div class='col1-row1'>
+                    <label for='principal'>Amount</label>
+                </div>
+                <div class='col2-row1'>
+                    <input type="number" name="principal">
+                </div>
+                <div class='col1-row2'>
+                    <label for='rate'>Interest Rate</label>
+                </div>
+                <div class='col2-row2'>
+                    <input type="range" name="rate" min='0' max="20" step="0.1">
+                    <output id='output'>Val</output>
+                </div>
+                <div class='col1-row3'>
+                    <label for='year'>No. of Years</label>
+                </div>
+                <div class='col2-row3'>
+                    <input list='years' name='year' id='year'>
+                    <datalist id='years'>
+                        <option value='0'>
+                        <option value='1'>
+                        <option value='2'>
+                        <option value='3'>
+                        <option value='4'>
+                        <option value='5'>
+                        <option value='6'>
+                        <option value='7'>
+                        <option value='8'>
+                        <option value='9'>
+                        <option value='10'>
+                    </datalist>
+                </div>
+                <input type="submit" value="Compute Interest">
+            </form>
+        </div>
+    <p id="result"></p>
+    <footer>&copy;Everyone Can Get Rich</footer>
+    </div>
+</body>
 </html>
