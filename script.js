@@ -14,12 +14,12 @@ window.addEventListener('load', function () {
     let interestRate = document.forms["form"]['rate'].value;
     let years = document.forms["form"]['year'].value;
     if (principal <= 0){
-      alert('Please enter a positive Number')
+      alert('Please enter a positive Amount Number')
       document.forms["form"]['principal'].focus()
       return false;
     }
     if (years <= 0){
-      alert('Please enter a positive Number')
+      alert('Please enter a positive Year Number')
       document.forms["form"]['year'].focus()
       return false;
     }
