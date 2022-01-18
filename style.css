@@ -10,10 +10,11 @@ h1   {
 
 p {
     margin-top: 13px;
-    margin-left:3.6em;
+    margin-left:56px;
     margin-bottom: 8px;
 }
 .container {
+    border-radius: 15px;
     margin: auto;
     margin-top:50px; 
     width: 40%;
