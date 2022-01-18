@@ -18,6 +18,11 @@ window.addEventListener('load', function () {
       document.forms["form"]['principal'].focus()
       return false;
     }
+    if (years <= 0){
+      alert('Please enter a positive Number')
+      document.forms["form"]['year'].focus()
+      return false;
+    }
     let result = (principal * (interestRate/100)) * years;
     console.log(interestRate/100)
     document.getElementById('result').innerHTML = 
